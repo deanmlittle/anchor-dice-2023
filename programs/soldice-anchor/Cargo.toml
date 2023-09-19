@@ -18,4 +18,4 @@ default = []
 [dependencies]
 anchor-lang = "0.28.0"
 solana-program = "1.16.13"
-anchor-sysvar-instruction = { path="../../crates/anchor-sysvar-instruction" }
+anchor-instruction-sysvar = { git="https://github.com/deanmlittle/anchor-instruction-sysvar" }

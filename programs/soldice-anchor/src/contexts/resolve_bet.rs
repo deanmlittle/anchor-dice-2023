@@ -1,7 +1,7 @@
 use std::collections::BTreeMap;
 
 use anchor_lang::{prelude::*, system_program::{Transfer, transfer}};
-use anchor_sysvar_instruction::{Ed25519InstructionSignatures, InstructionSysvar};
+use anchor_instruction_sysvar::{Ed25519InstructionSignatures, InstructionSysvar};
 use solana_program::{sysvar::instructions::load_instruction_at_checked, ed25519_program, hash::hash};
 
 use crate::{state::Bet, errors::DiceError};

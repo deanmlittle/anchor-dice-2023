@@ -137,6 +137,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "anchor-instruction-sysvar"
+version = "0.1.0"
+source = "git+https://github.com/deanmlittle/anchor-instruction-sysvar#f533b0d9c7c917af1405916811a5ac5cd1b9e459"
+dependencies = [
+ "anchor-lang",
+ "solana-program",
+]
+
+[[package]]
 name = "anchor-lang"
 version = "0.28.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -176,14 +185,6 @@ dependencies = [
  "sha2 0.10.7",
  "syn 1.0.109",
  "thiserror",
-]
-
-[[package]]
-name = "anchor-sysvar-instruction"
-version = "0.1.0"
-dependencies = [
- "anchor-lang",
- "solana-program",
 ]
 
 [[package]]
@@ -1499,8 +1500,8 @@ dependencies = [
 name = "soldice-anchor"
 version = "0.1.0"
 dependencies = [
+ "anchor-instruction-sysvar",
  "anchor-lang",
- "anchor-sysvar-instruction",
  "solana-program",
 ]
 
